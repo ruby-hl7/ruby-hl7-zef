@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe HL7::Message::Segment::ZEF do
   let(:zef_segment){
-    %[ZEF|1|embedded-pdf-data|]
+    %[ZEF|1|embedded-pdf-data]
   }
 
   let(:zef){

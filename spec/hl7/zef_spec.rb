@@ -21,4 +21,8 @@ describe HL7::Message::Segment::ZEF do
     expect(zef.set_id).to eq '1'
     expect(zef.embedded_pdf).to eq('embedded-pdf-data')
   end
+
+  it 'is a child of OBX' do
+    expect(HL7::Message::Segment::OBX.child_types).to include(:ZEF)
+  end
 end

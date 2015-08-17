@@ -5,3 +5,5 @@ module HL7
     add_field :embedded_pdf,  :idx => 2 # ZEF-2
   end
 end
+
+HL7::Message::Segment::OBX.add_child_type :ZEF
